@@ -55,4 +55,4 @@ ln -P .dotfilesrc ~/
 ln -P .vimrc ~/
 
 # Install vim plugins
-vim -c ":PluginInstall" -c ":q!"
+vim -c ":PluginInstall" -c ":q!" -c ":q!"
