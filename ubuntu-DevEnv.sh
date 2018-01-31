@@ -11,6 +11,9 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+
+# Install vim plugins
+vim -c ":PluginInstall" -c ":q!"
 # Add zsh into /etc/shells
 sudo sh -c "echo `which zsh` >> /etc/shells"
 # Change shell to zsh
@@ -43,3 +46,6 @@ pip install powerline-status
 pip install psutil
 # Install jedi-vim (Python)
 pip install jedi
+# Install dotfiles
+pip install dotfiles
+git clone https://github.com/menJe/Dotfiles.git ~/Dotfiles
