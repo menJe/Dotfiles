@@ -2,6 +2,9 @@
 # Install Zsh, Tmux, Openssh, Net-tools
 sudo apt -y install zsh tmux net-tools openssh-server git
 
+# Clone Dotfiles from my git
+git clone https://github.com/menJe/Dotfiles.git ~/.localrc
+
 # Install vim
 sudo apt -y install vim
 # Install vim--Vundle
@@ -12,8 +15,6 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
-# Install vim plugins
-vim -c ":PluginInstall" -c ":q!"
 # Add zsh into /etc/shells
 sudo sh -c "echo `which zsh` >> /etc/shells"
 # Change shell to zsh
@@ -48,4 +49,10 @@ pip install psutil
 pip install jedi
 # Install dotfiles
 pip install dotfiles
-git clone https://github.com/menJe/Dotfiles.git ~/Dotfiles
+
+mv ~/.localrc
+ln -P .dotfilesrc ~/
+ln -P .vimrc ~/
+
+# Install vim plugins
+vim -c ":PluginInstall" -c ":q!"
