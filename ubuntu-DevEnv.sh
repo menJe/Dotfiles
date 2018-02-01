@@ -1,6 +1,8 @@
 #!/bin/bash
-# Install Zsh, Tmux, Openssh, Net-tools
-sudo apt -y install zsh tmux net-tools openssh-server git
+# Install Zsh, Tmux, Openssh, Net-tools, add zsh into /etc/shells
+sudo apt -y install zsh tmux net-tools openssh-server git net-tools; sudo sh -c "echo `which zsh` >> /etc/shells"
+# Change shell to zsh
+chsh -s $(which zsh)
 
 # Clone Dotfiles from my git
 git clone https://github.com/menJe/Dotfiles.git ~/.localrc
@@ -15,10 +17,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
-# Add zsh into /etc/shells
-sudo sh -c "echo `which zsh` >> /etc/shells"
-# Change shell to zsh
-chsh -s $(which zsh)
+
 
 # Install Anaconda
 chmod 744 Anaconda.sh
