@@ -49,7 +49,7 @@ pip install jedi
 # Install dotfiles
 pip install dotfiles
 
-mv ~/.localrc
+cd ~/.localrc
 ln -P .dotfilesrc ~/
 ln -P .vimrc ~/
 
