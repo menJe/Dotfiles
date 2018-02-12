@@ -52,6 +52,8 @@ cd ~/.localrc
 ln -P .dotfilesrc ~/
 ln -P .vimrc ~/
 ln -P .tmux.conf ~/
+ln -P .zshrc ~/
+ln -P ubuntu-DevEnv.sh ~/
 
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
