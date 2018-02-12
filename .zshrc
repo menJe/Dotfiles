@@ -1,3 +1,4 @@
+
 export PATH=/home/meng/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 alias ptt.cc='ssh bbsu@ptt.cc'
 alias ls='ls -G'
@@ -49,7 +50,7 @@ ZSH_THEME="Soliah"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
- DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -62,45 +63,45 @@ ZSH_THEME="Soliah"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
- # Add wisely, as too many plugins slow down shell startup.
+# Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  )
+    git
+)
 
-  source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
-  # User configuration
+# User configuration
 
-  # export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="/usr/local/man:$MANPATH"
 
-  # You may need to manually set your language environment
-   # export LANG=en_US.UTF-8
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-   # Preferred editor for local and remote sessions
-  # if [[ -n $SSH_CONNECTION ]]; then
-  #   export EDITOR='vim'
-  # else
-  #   export EDITOR='mvim'
-  # fi
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-  # Compilation flags
-   # export ARCHFLAGS="-arch x86_64"
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
-  # ssh
-  # export SSH_KEY_PATH="~/.ssh/rsa_id"
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-  # Set personal aliases, overriding those provided by oh-my-zsh libs,
-  # plugins, and themes. Aliases can be placed here, though oh-my-zsh
-  # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-  # For a full list of active aliases, run `alias`.
-  #
-  # Example aliases
-  # alias zshconfig="mate ~/.zshrc"
-  # alias ohmyzsh="mate ~/.oh-my-zsh"
-  . ".localrc/powerline/bindings/zsh/powerline.zsh"
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+. ".localrc/powerline/bindings/zsh/powerline.zsh"
 
 # The next line updates PATH for the Google Cloud SDK.
-  if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-  if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
