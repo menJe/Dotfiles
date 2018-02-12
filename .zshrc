@@ -1,4 +1,3 @@
-
 export PATH=$HOME/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 alias ptt.cc='ssh bbsu@ptt.cc'
 alias ls='ls -G'
@@ -98,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-. ".localrc/powerline/bindings/zsh/powerline.zsh"
+. "$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
