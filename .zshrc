@@ -1,4 +1,3 @@
-export PATH=$HOME/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 alias ptt.cc='ssh bbsu@ptt.cc'
 alias ls='ls -G'
 
