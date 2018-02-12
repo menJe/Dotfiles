@@ -20,6 +20,7 @@ git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugi
 
 
 # Install Anaconda
+wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
@@ -55,3 +56,4 @@ ln -P .vimrc ~/
 
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
+
