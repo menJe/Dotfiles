@@ -17,10 +17,8 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
-
-
 # Install Anaconda
-wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
+#wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
@@ -53,6 +51,7 @@ pip install dotfiles
 cd ~/.localrc
 ln -P .dotfilesrc ~/
 ln -P .vimrc ~/
+ln -P .tmux.conf ~/
 
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
