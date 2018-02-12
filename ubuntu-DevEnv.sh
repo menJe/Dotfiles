@@ -29,7 +29,6 @@ ln -P ubuntu-DevEnv.sh ~/
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
-echo "export PATH=$HOME/anaconda3/bin:$PATH" >> ~/.zshrc
 source ~/.zshrc
 
 # Setup pip packages
