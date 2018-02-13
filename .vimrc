@@ -28,7 +28,6 @@ Plugin 'bumaociyuan/vim-swift'
 " tmux-navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
-
 call vundle#end()
 filetype plugin indent on
 
