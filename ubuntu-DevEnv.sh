@@ -25,7 +25,7 @@ ln -P .zshrc ~/
 ln -P ubuntu-DevEnv.sh ~/
 
 # Install Anaconda
-#wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
+wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
