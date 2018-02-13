@@ -22,9 +22,6 @@ Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual
 " colorschemes
 Plugin 'chriskempson/base16-vim'
 
-" Swift plugins
-Plugin 'bumaociyuan/vim-swift'
-
 " tmux-navigator
 Plugin 'christoomey/vim-tmux-navigator'
 
