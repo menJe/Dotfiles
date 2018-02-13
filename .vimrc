@@ -22,10 +22,6 @@ Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual
 " colorschemes
 Plugin 'chriskempson/base16-vim'
 
-" JavaScript plugins
-Plugin 'pangloss/vim-javascript'
-Plugin 'jelera/vim-javascript-syntax'
-
 " Swift plugins
 Plugin 'bumaociyuan/vim-swift'
 
