@@ -1,0 +1,18 @@
+{
+	"groups": {
+		"active_window_status": {"fg": "brightestorange",   "bg": "gray0",    "attrs": []},
+		"window_status":        {"fg": "gray70",     "bg": "gray0",    "attrs": []},
+		"activity_status":      {"fg": "yellow",     "bg": "gray0",    "attrs": []},
+		"bell_status":          {"fg": "red",        "bg": "gray0",    "attrs": []},
+		"window":               {"fg": "white",      "bg": "gray0",    "attrs": []},
+		"window:divider":       {"fg": "gray70",      "bg": "gray0",    "attrs": []},
+		"window:current":       {"fg": "white", 	 "bg": "mediumorange", "attrs": []},
+		"window_name":          {"fg": "gray0",     "bg": "mediumorange", "attrs": ["bold"]},
+		"session":              {"fg": "white",     "bg": "mediumdarkorange",   "attrs": []},
+		"session:prefix":       {"fg": "gray9",     "bg": "brightred", "attrs": ["bold"]},
+
+		"external_ip":                { "fg": "black", "bg": "gray70", "attrs": ["bold"] },
+		"internal_ip":                { "fg": "gray8", "bg": "gray0", "attrs": [] }
+	}
+}
+/usr/local/lib/python3.6/site-packages/powerline/config_files/colorschemes/tmux

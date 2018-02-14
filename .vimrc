@@ -173,7 +173,6 @@ let g:ctrlp_working_path_mode = 2
 let g:powerline_pycmd='py3'
 let g:powerline_pyeval='py3eval'
 
-
 " Custom Mapping
 no <down> <Nop>
 no <left> <Nop>
@@ -186,3 +185,13 @@ ino <up> <Nop>
 
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
+
+" Syntastic setup
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" YouCompleteMe
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+
