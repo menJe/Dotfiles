@@ -18,6 +18,8 @@ Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'Valloric/YouCompleteMe' " YouCompleteMe--auto code completion
+Plugin 'vim-syntastic/syntastic' " syntastic--analyze syntax
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -184,4 +186,3 @@ ino <up> <Nop>
 
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
-

@@ -53,6 +53,11 @@ pip install psutil
 pip install jedi
 # Install dotfiles
 pip install dotfiles
+
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
+
+# Install YouCompleteMe
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
 
