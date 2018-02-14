@@ -1,6 +1,7 @@
 #!/bin/bash
 # Install Zsh, Tmux, Openssh, Net-tools, add zsh into /etc/shells
-sudo apt -y install zsh tmux net-tools openssh-server git net-tools; sudo sh -c "echo `which zsh` >> /etc/shells"
+sudo apt -y install zsh tmux net-tools openssh-server git net-tools python3-dev build-essential cmake;
+sudo sh -c "echo `which zsh` >> /etc/shells"
 # Change shell to zsh
 chsh -s $(which zsh)
 
@@ -25,7 +26,7 @@ ln -P .zshrc ~/
 ln -P ubuntu-DevEnv.sh ~/
 
 # Install Anaconda
-wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
+#wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
@@ -53,9 +54,14 @@ pip install psutil
 pip install jedi
 # Install dotfiles
 pip install dotfiles
-
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
+
+PIP_PATH=$(echo $(pip show numpy) | awk '{split($0,a,"Location:"); print a[2]}' | awk '{print $1}')
+
+mv powerline_config.tar $PIP_PATH/powerline/config_files/
+cd $PIP_PATH/powerline/config_files
+tar -xvf powerline_config 
 
 # Install YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
