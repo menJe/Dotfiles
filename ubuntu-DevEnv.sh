@@ -61,7 +61,8 @@ PIP_PATH=$(echo $(pip show numpy) | awk '{split($0,a,"Location:"); print a[2]}' 
 
 mv powerline_config.tar $PIP_PATH/powerline/config_files/
 cd $PIP_PATH/powerline/config_files
-tar -xvf powerline_config 
+tar -xvf powerline_config.tar
+rm powerline_config.tar
 
 # Install YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
