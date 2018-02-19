@@ -1,6 +1,7 @@
 #!/bin/bash
-# Install Zsh, Tmux, Openssh, Net-tools, add zsh into /etc/shells
-sudo apt -y install zsh tmux net-tools openssh-server git net-tools python3-dev build-essential cmake;
+# Install Zsh, Tmux, Openssh, Net-tools, add zsh into /etc/shells.
+# note: dkms is used for installing nvidia driver and gcc-multilib is used for 32-bit library in nvidia driver
+sudo apt -y install zsh tmux net-tools openssh-server git net-tools python3-dev build-essential dkms gcc-multilib cmake;
 sudo sh -c "echo `which zsh` >> /etc/shells"
 # Change shell to zsh
 chsh -s $(which zsh)
@@ -14,7 +15,7 @@ sudo apt -y install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 
 # Install oh-my-zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+# git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
