@@ -3,6 +3,7 @@
 # note: dkms is used for installing nvidia driver and gcc-multilib is used for 32-bit library in nvidia driver
 sudo apt -y install zsh tmux net-tools openssh-server git net-tools python3-dev build-essential dkms gcc-multilib cmake;
 sudo sh -c "echo `which zsh` >> /etc/shells"
+
 # Change shell to zsh
 chsh -s $(which zsh)
 
@@ -69,3 +70,12 @@ rm powerline_config.tar
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 
+# (Optional)
+# Install Alfa Driver
+git clone https://github.com/zebulon2/rtl8812au.git
+cd rtl8812au
+make
+sudo make install
+sudo modprobe 8812au
+cd ..
+sudo rm -r rtl8812au
