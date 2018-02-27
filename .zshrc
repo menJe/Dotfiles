@@ -1,6 +1,6 @@
 export PATH=$HOME/anaconda3/bin:$PATH
 alias ptt.cc='ssh bbsu@ptt.cc'
-alias ls='ls -G'
+alias ls='ls --color'
 
 export PATH="~/.local/bin:$PATH"
 # If you come from bash you might have to change your $PATH.
@@ -67,7 +67,7 @@ plugins=(
     git
 )
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
