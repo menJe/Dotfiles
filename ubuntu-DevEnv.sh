@@ -47,6 +47,8 @@ pip install Pillow
 pip install numpy
 # Install matplotlib (plot graphical tools)
 pip install matplotlib
+# Install tensorflow
+conda install tensorflow-gpu
 
 # Install powerline
 pip install powerline-status
@@ -56,6 +58,7 @@ pip install psutil
 pip install jedi
 # Install dotfiles
 pip install dotfiles
+
 # Install vim plugins
 vim -c ":PluginInstall" -c ":q!" -c ":q!"
 

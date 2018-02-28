@@ -20,6 +20,7 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'Valloric/YouCompleteMe' " YouCompleteMe--auto code completion
 Plugin 'vim-syntastic/syntastic' " syntastic--analyze syntax
+Plugin 'airblade/vim-gitgutter' "Git helper
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
