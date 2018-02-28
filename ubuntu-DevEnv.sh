@@ -28,7 +28,7 @@ ln -P .zshrc ~/
 ln -P ubuntu-DevEnv.sh ~/
 
 # Install Anaconda
-wget "https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh" -O Anaconda.sh
+wget "https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
@@ -75,10 +75,10 @@ cd ~/.vim/bundle/YouCompleteMe
 
 # (Optional)
 # Install Alfa Driver
-git clone https://github.com/zebulon2/rtl8812au-driver-5.2.20.git rtl8812au
-cd rtl8812au
-make
-sudo make install
-sudo modprobe 8812au
-cd ..
-sudo rm -r rtl8812au
+# git clone https://github.com/zebulon2/rtl8812au-driver-5.2.20.git rtl8812au
+# cd rtl8812au
+# make
+# sudo make install
+# sudo modprobe 8812au
+# cd ..
+# sudo rm -r rtl8812au
