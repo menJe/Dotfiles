@@ -6,7 +6,7 @@
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/anaconda3/lib/python3.6/site-packages/powerline/bindings/vim
+set rtp+=$PIP_PATH/powerline/bindings/vim
 call vundle#begin()
 
 " let vundle manage vundle
