@@ -1,4 +1,4 @@
-export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/miniconda3/bin:$PATH
 alias ptt.cc='ssh bbsu@ptt.cc'
 alias ls='ls --color'
 
@@ -109,4 +109,4 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-. "$HOME/anaconda3/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh"
+. "$PIP_PATH/powerline/bindings/zsh/powerline.zsh"

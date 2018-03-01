@@ -28,7 +28,7 @@ ln -P .zshrc ~/
 ln -P ubuntu-DevEnv.sh ~/
 
 # Install Anaconda
-wget "https://repo.continuum.io/archive/Anaconda3-5.1.0-Linux-x86_64.sh" -O Anaconda.sh
+wget "https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh" -O Anaconda.sh
 chmod 744 Anaconda.sh
 ./Anaconda.sh 
 rm Anaconda.sh
@@ -64,7 +64,7 @@ vim -c ":PluginInstall" -c ":q!" -c ":q!"
 
 PIP_PATH=$(echo $(pip show numpy) | awk '{split($0,a,"Location:"); print a[2]}' | awk '{print $1}')
 
-mv powerline_config.tar $PIP_PATH/powerline/config_files/
+cp powerline_config.tar $PIP_PATH/powerline/config_files/
 cd $PIP_PATH/powerline/config_files
 tar -xvf powerline_config.tar
 rm powerline_config.tar
