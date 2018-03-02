@@ -50,7 +50,7 @@ pip install matplotlib
 # Install Menpo
 pip install menpo
 # Install tensorflow
-conda install tensorflow-gpu
+pip install tensorflow-gpu
 
 # Install powerline
 pip install powerline-status
