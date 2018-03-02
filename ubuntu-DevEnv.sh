@@ -47,6 +47,8 @@ pip install Pillow
 pip install numpy
 # Install matplotlib (plot graphical tools)
 pip install matplotlib
+# Install Menpo
+pip install menpo
 # Install tensorflow
 conda install tensorflow-gpu
 
