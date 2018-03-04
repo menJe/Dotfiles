@@ -75,12 +75,10 @@ rm powerline_config.tar
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 
+# Install Cuda
+# Install CUDNN
+
 # (Optional)
 # Install Alfa Driver
-# git clone https://github.com/zebulon2/rtl8812au-driver-5.2.20.git rtl8812au
-# cd rtl8812au
-# make
-# sudo make install
-# sudo modprobe 8812au
-# cd ..
-# sudo rm -r rtl8812au
+chmod 744 setup_alfa_driver.sh
+sudo sh ./setup_alfa_driver.sh
