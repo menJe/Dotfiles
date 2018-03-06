@@ -16,7 +16,7 @@ sudo apt -y install vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
 
 # Install oh-my-zsh
-# git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install zsh-completion
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 
@@ -80,5 +80,5 @@ cd ~/.vim/bundle/YouCompleteMe
 
 # (Optional)
 # Install Alfa Driver
-chmod 744 setup_alfa_driver.sh
-sudo sh ./setup_alfa_driver.sh
+#chmod 744 setup_alfa_driver.sh
+#sudo sh ./setup_alfa_driver.sh
