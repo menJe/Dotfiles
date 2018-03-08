@@ -7,3 +7,4 @@ sudo make install
 sudo modprobe 8812au
 cd ..
 sudo rm -r rtl8812au
+sudo update-initramfs -u
